@@ -1,0 +1,1 @@
+npm install axios bcryptjs body-parser cors dotenv express express-fileupload moment mongoose sharp 

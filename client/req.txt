@@ -1,0 +1,2 @@
+npm install
+npm install react-hot-toast antd react-router-dom lucide-react
