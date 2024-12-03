@@ -7,3 +7,4 @@
 
 export * from './ErrorBoundary';
 export * from './Loader';
+export * from './Wrapper';

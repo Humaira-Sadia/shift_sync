@@ -12,7 +12,7 @@ const Navigation = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/">
-          <Route index element={<Pages.Home />} />
+          <Route index element={<Pages.Dashboard />} />
           {/* ALL RESTRICTED ROUTES */}
           <Route path="*" element={<NotFound />} />
         </Route>
