@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 
-const { healthCheck } = require('./routes');
+const {healthCheck} = require('./routes');
 
 // Load environment variables from .env file
 dotenv.config();
@@ -17,9 +17,10 @@ app.use(express.json());
 // app.use('/health-check', healthCheck)
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI)
+mongoose
+  .connect(process.env.MONGO_URI)
   .then(() => console.log('Connected to MongoDB successfully'))
-  .catch((error) => console.error('Failed to connect to MongoDB:', error));
+  .catch(error => console.error('Failed to connect to MongoDB:', error));
 
 // Example route
 app.get('/', (req, res) => {
